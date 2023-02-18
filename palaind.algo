@@ -1,0 +1,34 @@
+ALGORITHM palaindrome
+type
+    mot = array[100] de CHAR;  
+VAR
+  i,j,n:integer; 
+  m:mot; 
+BEGIN
+    write('donnez la taille : ');
+     readln(n);
+     for i:= 1 to t do
+        begin
+        write(m[i]);
+        end;
+    end for;
+    i := 1;
+    j := n-1;
+    while((m[i] > m[j]) and (i <= n/2)) do
+    i:=i+1;
+    j:=j-1;
+    IF (i==j) THEN
+       write("est un palaindromme:m");
+    ELSE
+        write("n'est pas palaindromme:m");
+    END_IF
+
+
+
+
+
+
+
+END
+
+
